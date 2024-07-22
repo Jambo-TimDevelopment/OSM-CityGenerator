@@ -7,7 +7,6 @@ class FOSMFile : public IFastXmlCallback
 	
 public:
 	
-	/** Default constructor for FOSMFile */
 	FOSMFile();
 
 	/** Destructor for FOSMFile */

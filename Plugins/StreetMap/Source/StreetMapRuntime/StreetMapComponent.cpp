@@ -551,14 +551,6 @@ void UStreetMapComponent::GenerateRoads()
 {
 	/////////////////////////////////////////////////////////
 	// Visual tweakables for generated Street Map mesh
-	//
-	const float RoadZ = MeshBuildSettings.RoadOffsetZ;
-	const float StreetThickness = MeshBuildSettings.StreetThickness;
-	const FColor StreetColor = MeshBuildSettings.StreetColor.ToFColor(false);
-	const float MajorRoadThickness = MeshBuildSettings.MajorRoadThickness;
-	const FColor MajorRoadColor = MeshBuildSettings.MajorRoadColor.ToFColor(false);
-	const float HighwayThickness = MeshBuildSettings.HighwayThickness;
-	const FColor HighwayColor = MeshBuildSettings.HighwayColor.ToFColor(false);
 	/////////////////////////////////////////////////////////
 
 	CachedLocalBounds = FBox(ForceInit);
@@ -614,13 +606,13 @@ void UStreetMapComponent::GenerateRoads()
 			}
 			FActorSpawnParameters SpawnParameters;
 			SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-			if (AStreetMapPointNode* PlacementObject = World->SpawnActor<AStreetMapPointNode>(StreetMapPointNodeClass, SpawnParameters))
+			/*if (AStreetMapPointNode* PlacementObject = World->SpawnActor<AStreetMapPointNode>(StreetMapPointNodeClass, SpawnParameters))
 			{
 				PlacementObject->SetOwner(GetOwner());
 				PlacementObject->SetActorLocation(GetOwner()->GetActorLocation());
 				PlacementObject->SetStreetMapNode(Node);
 				PlacementObject->UserConstructionScript();
-			}
+			}*/
 		}
 	}
 }

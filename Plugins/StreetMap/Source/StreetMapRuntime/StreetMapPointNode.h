@@ -7,6 +7,7 @@
 #include "GameFramework/Actor.h"
 #include "StreetMapPointNode.generated.h"
 
+class AStreetMapSplineRoads;
 UCLASS()
 class STREETMAPRUNTIME_API AStreetMapPointNode : public AActor
 {

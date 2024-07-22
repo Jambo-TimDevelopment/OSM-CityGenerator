@@ -1,0 +1,8 @@
+{
+	"BuildId": "25360045",
+	"Modules": 
+	{
+		"StreetMapImporting": "UnrealEditor-StreetMapImporting.dll",
+		"StreetMapRuntime": "UnrealEditor-StreetMapRuntime.dll"
+	}
+}
